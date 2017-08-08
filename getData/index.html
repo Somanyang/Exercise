@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+	padding:10px 0 0 10px ;
+}
+ul{
+	width: 98%;
+  margin: 10px;
+  list-style: none;
+  /*width:600px;*/
+  overflow: hidden;
+}
+ul li{
+  width:180px;
+  float: left;
+  margin: 10px;
+  height: 250px;
+  padding: 5px 0;
+  box-shadow: 0px 0px 8px 0 #999;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-content: center;
+  align-items: center;
+}
+#app{
+	position: relative;
+	margin: 10px auto 200px;
+}
+#app:after{
+	content: '';
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+#app div{
+	height: 190px;
+}
+ol{
+	overflow: hidden;
+	list-style: none;
+}
+ol li{
+	float: left;
+	width: 30px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	border:2px solid #aaa;
+	margin-right:2px ;
+	background: #fff;
+}
+p{
+  font-size: 12px;
+}
+p:nth-of-type(1){
+	height: 36px;
+	line-height: 18px;
+	overflow:hidden;
+  font-weight: bold;
+  font-size: 14px;
+}
+img{
+	height: 100%;
+}
+a{
+  padding:8px;
+  border: 1px solid #000;
+}
+.red{
+	background: lightsteelblue;
+}
+section{
+	overflow: hidden;
+}
+input,button{
+	box-sizing: border-box;
+	float: left;
+	height: 30px;
+	margin-right:10px ;
+	width: 80px;
+}
+input{
+	width: 300px;
+	font-size: 18px;
+	line-height: 30px;
+	text-indent: 10px;
+}
+</style>
+</head>
+<body>
+	<section>
+		<input type="text" name="" value="">
+		<button type="button" name="button">搜索</button>
+	</section>
+
+
+<div id="app">
+  <!-- <ul>
+    <li>
+      <img width="128" src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2460006593.webp">
+      <p>神奇女侠</p>
+      <p>评分:10分</p>
+    </li>
+    
+  </ul> -->
+</div>
+<script src="src/jquery-3.1.1.js" charset="utf-8"></script>
+<script src="src/template.js" charset="utf-8"></script>
+
+<script type="text/html" id="temp"></script>
+<script type="text/html" id="temp1"></script>
+<script src="comm/M.js" charset="utf-8"></script>
+<script src="comm/V.js" charset="utf-8"></script>
+<script src="comm/C.js" charset="utf-8"></script>
+</body>
+</html>
