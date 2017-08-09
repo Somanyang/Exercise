@@ -23,19 +23,29 @@ function Model(search,num){
 				}
 			}
 			//因为只有localStorage没有对应数据才可以进来，所以可以直接将数据添加进去
-			if(checked){
-				obj[search].push(data);
-			}else{
-				obj[search]=[];
-				obj[search].push(data);
+			if(data.subjects.length){
+				if(checked){
+					obj[search].push(data);
+				}else{
+					obj[search]=[];
+					obj[search].push(data);
+				}
 			}
+			
 			data.pages=Math.ceil(data.total/data.count);
-			localStorage.setItem('result',JSON.stringify(obj));
 			let t = template('temp',data);
-			let p = template('temp1',data);
-			$('#app').html(t+p);
-			var ol=document.getElementsByTagName('ol')[0];
-			clickPage(ol,search,num,data);
+			$('#app').html(t);
+			
+			//还需再调整
+			if((!local(search,num)&&(!num))&&data.subjects.length){
+				let p = template('temp1',data);
+				$('#app2').html(p);
+				var ol=document.getElementsByTagName('ol')[0];
+				ol.children[num/data.count].className='red';
+				clickPage(ol,search,num,data);
+			}
+			
+			localStorage.setItem('result',JSON.stringify(obj));
 		}
 	});
 }
@@ -54,14 +64,17 @@ function local(val,num){
 
 function show(data){
 	//生成页面的主要内容
-	var str1='';
+	var str1=`<h5>${data.title}一共有:${data.total}条结果</h5><ul>`;
 	data.subjects.forEach(function(e,i){
 		str1+=`<li>
-			      <img width="128" src="${e.images.medium}">
+					<div>
+				      <img width="128" src="${e.images.medium}">
+				    </div>  
 			      <p>${e.title}</p>
-			      <p>${e.rating.average}</p>
+			      <p>评分:${e.rating.average}分</p>
 		    </li>`
 	})
+	str1+='</ul>';
 	//初始打开页面时，生成页码
 	var str2='';
 	for(var i=0;i<Math.ceil(data.total/data.count);i++){
@@ -73,16 +86,17 @@ function show(data){
 //页码点击事件
 function clickPage(obj,search,num,data){
 	obj.onclick=function(ev){
-//		$(obj).find('li').remove('red');
-//		ev.target.className='red';
-		num=(ev.target.innerText-1)*data.count;
-		location.hash='page='+ev.target.innerText;
-		if(local(search,num)){
-			var str=show(local(search,num));
-			$('ul').html(str[0])
-		}else{
-			Model(search,num);
+		if(ev.target.tagName==='LI'){
+			$(obj).find('li').removeClass('red');
+			ev.target.className='red';
+			num=(ev.target.innerText-1)*data.count;
+			location.hash='wd='+search+'&page='+ev.target.innerText;
+			if(local(search,num)){
+				var str=show(local(search,num));
+				$('#app').html(str[0])
+			}else{
+				Model(search,num);
+			}
 		}
-		
 	}
 }
