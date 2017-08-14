@@ -27,8 +27,10 @@ class Items extends React.Component{
 	blurs=(ev)=>{
 		this.setState({
 			db:false
-		})
-		this.props.changeContent(this.props.id,this.db.value);
+		});
+		if(this.db.value){
+			this.props.changeContent(this.props.id,this.db.value);
+		}
 		if(this.db.value===''){
 			this.props.removeChild(this.props.id);
 		}
@@ -38,7 +40,7 @@ class Items extends React.Component{
 			this.blurs()
 		}else if(ev.keyCode===27){
 			this.db.value=this.props.content;
-			this.db.blur()
+			this.blurs()
 		}
 	}
 	render(){
@@ -47,7 +49,7 @@ class Items extends React.Component{
 		return(
             <li className={sClass} onClick={this.click} onDoubleClick={this.edit}>
                 <div className="view">
-                    <input className="toggle" type="checkbox" checked={this.props.checked}/>
+                    <input className="toggle" type="checkbox" checked={this.props.checked} readOnly/>
                     <label>{this.props.content}</label>
                     <button className="destroy"></button>
                 </div>

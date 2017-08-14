@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import Items from './Items';
+import FootModule from './FootModule';
 import '../css/style.css';
+
 class HeadModule extends Component{
 	constructor(){
 		super();
@@ -8,6 +10,11 @@ class HeadModule extends Component{
 			val:'',
 			arr:[]
 		}
+	}
+	componentWillMount(){
+		this.setState({
+			arr:getItem()
+		});
 	}
 	change=(ev)=>{
 		this.setState({
@@ -82,26 +89,23 @@ class HeadModule extends Component{
 			arr:arr1
 		})
 	}
-	chooseItem=(ev)=>{
-		let lis=Array.from(this.ul.children);
-		if(ev.target.tagName.toLowerCase()==='a'){
+	chooseItem=(target)=>{
+		let lis=Array.from(target.parentNode.parentNode.children);
+		if(target.tagName.toLowerCase()==='a'){
 			lis.forEach((e)=>{
 				e.children[0].className='';
 			})
-			ev.target.className='selected';
-			window.location=ev.target.href;
+			target.className='selected';
+			window.location=target.href;
 			this.setState({});
 		}
 		
 	}
+	
 	render(){
 		let {arr}=this.state;
-		/*if(arr.length===0&&localStorage.getItem('info')){
-			arr=JSON.parse(localStorage.getItem('info'));
-		}
-		if(arr.length){
-			localStorage.setItem('info',JSON.stringify(arr));
-		}*/
+		
+		localStorage.setItem('info',JSON.stringify(arr));
 		let str='';
 		if(window.location.hash){
 			str=window.location.hash.split('/')[1];
@@ -144,6 +148,16 @@ class HeadModule extends Component{
 			}
 			return <Items {...data} />
 		})
+		let footer=null;
+		if(arr.length){
+			let data2={
+				num:num,
+				chooseItem:this.chooseItem,
+				clearItem:this.clearItem
+			}
+			footer=<FootModule {...data2}/>;
+		}
+		
 		let onOff=false;
 		if(arr2.length){
 			onOff=arr2.every(e=>{
@@ -152,7 +166,7 @@ class HeadModule extends Component{
 		}
 		let allCheck=onOff;
 		return(
-			<section className='todoapp'>
+			<section className='todoapp' onLoad={this.loading}>
 				<header className="header" >
 	                <h1>todos</h1>
 	                <input className="new-todo" 
@@ -166,29 +180,12 @@ class HeadModule extends Component{
 	                <input className="toggle-all" type="checkbox" checked={allCheck} onChange={this.checkAll}/>
 	                <ul className="todo-list">{list}</ul>
 	            </section>
-	            <footer className="footer" >
-		          <span className="todo-count">
-		            <strong>{num}</strong>
-		            <span>条已选中</span>
-		          </span>
-		          <ul className="filters" onClick={this.chooseItem} ref={(ele)=>{this.ul=ele}}>
-		            <li>
-		              <a href="#/all" className="selected">全部</a>
-		            </li>
-		            <li>
-		              <a href="#/active">未完成</a>
-		            </li>
-		            <li>
-		              <a href="#/completed">已完成</a>
-		            </li>
-		          </ul>
-		          <button className="clear-completed" onClick={this.clearItem}>
-		              清除完成项
-		          </button>
-		        </footer>
+	            {footer}
             </section>
-		)
+        )
 	}
 }
-
+function getItem(){
+	return JSON.parse(localStorage.getItem('info'))||[];
+}
 export default HeadModule;
