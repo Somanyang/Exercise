@@ -1,0 +1,49 @@
+body {
+  background: #F6F6F6;
+}
+header {
+  background: #fff;
+  border-bottom: 0.02133333rem solid #dddddd;
+}
+header h4 {
+  margin-left: 3.2rem;
+}
+section {
+  padding-top: 2.13333333rem;
+}
+li {
+  margin: 0 auto;
+  width: 15.14666667rem;
+  border: 0.02133333rem solid #dddddd;
+  border-radius: 0.21333333rem;
+  background: #fff;
+  margin-bottom: 0.42666667rem;
+}
+li h4 {
+  height: 2.048rem;
+  line-height: 2.048rem;
+  text-indent: 0.21333333rem;
+  font-size: 0.64rem;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+}
+li div {
+  display: flex;
+  height: 2.048rem;
+  justify-content: space-between;
+  padding-right: 0.64rem;
+  border-bottom: 0.02133333rem solid #eeeeee;
+}
+li div span {
+  display: block;
+  font-size: 0.64rem;
+  line-height: 2.048rem;
+  text-indent: 1.28rem;
+}
+li div b {
+  display: block;
+  height: 2.048rem;
+  width: 0.74666667rem;
+  background: url(../images/stealth.png) no-repeat center;
+  background-size: 100% ;
+}

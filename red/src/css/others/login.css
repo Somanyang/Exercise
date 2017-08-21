@@ -1,0 +1,195 @@
+@charset "utf-8";
+input,
+label,
+dl,
+dt,
+dd,
+body,
+p {
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  perspective: 42.66666667rem;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: #f8f8f8;
+  font-family: "微软雅黑";
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+:focus {
+  outline: none;
+}
+#login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8 ;
+}
+#login dl {
+  width: 100%;
+  height: 5.86666667rem;
+  padding-top: 2.77333333rem;
+  display: -webkit-box;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-align-content: center;
+}
+#login dt {
+  width: 2.98666667rem;
+  height: 2.98666667rem;
+  margin: 0 auto;
+}
+#login dt img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+}
+#login dd {
+  text-align: center;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  font-size: 0.53333333rem;
+}
+.info {
+  padding: 0 0.53333333rem;
+}
+.info div {
+  height: 1.70666667rem;
+  font-size: 0.64rem;
+  line-height: 1.70666667rem;
+  border: 0.02133333rem solid transparent;
+}
+.info label,
+.info input {
+  float: left;
+}
+.info label {
+  padding-right: 1.28rem;
+  color: #666;
+}
+.info input {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  height: 1.70666667rem;
+  box-sizing: border-box;
+  line-height: 1.70666667rem;
+  font-size: 0.55466667rem;
+}
+.info input:focus {
+  outline: none;
+}
+.info .login-summit,
+.info .register-summit {
+  display: block;
+  text-align: center;
+  font-size: 0.59733333rem;
+  color: #fff;
+  background: #f66158;
+  border-radius: 0.93866667rem;
+  height: 1.87733333rem;
+  line-height: 1.87733333rem;
+}
+.to-register,
+.to-login {
+  display: block;
+  font-size: 0.512rem;
+  text-align: center;
+  color: #f66158;
+  line-height: 2.21866667rem;
+  height: 2.21866667rem;
+}
+#register {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 5.97333333rem;
+  background: #f8f8f8 ;
+}
+.back {
+  display: block;
+  position: absolute;
+  top: 1.06666667rem;
+  text-align: center;
+  left: 0.42666667rem;
+  height: 1.45066667rem;
+  line-height: 1.45066667rem;
+  width: 2.56rem;
+  font-size: 0.55466667rem;
+  text-indent: 0.21333333rem;
+  color: #888888;
+  background: url(../images/back.png) no-repeat 0.21333333rem center;
+  background-size: 26% ;
+}
+.login-error {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 0.21333333rem;
+  top: 0;
+  left: 0;
+}
+.login-error p {
+  font-size: 0.81066667rem;
+  width: 100%;
+  height: 4.26666667rem;
+  line-height: 4.26666667rem;
+  border-bottom: 1px solid #888888;
+  text-align: center;
+}
+.login-error span {
+  display: block;
+  height: 2.13333333rem;
+  line-height: 2.13333333rem;
+  font-size: 0.64rem;
+  border-radius: 0.21333333rem;
+  text-align: center;
+}
+.login-error div {
+  width: 80%;
+  height: 6.42133333rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.64rem;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+#outerWrap {
+  height: 100%;
+  overflow: hidden;
+}
+#contWrap {
+  position: absolute;
+  width: 100%;
+  top: 2.73066667rem;
+  left: 0;
+  height: 23.57333333rem;
+}
+.contWrap {
+  background: #fb6f65;
+}

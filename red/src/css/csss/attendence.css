@@ -1,0 +1,45 @@
+body {
+  background: #fff;
+}
+header {
+  background: #fff;
+  border-bottom: 0.02133333rem solid #dddddd;
+}
+header h4 {
+  margin-left: 3.2rem;
+}
+section {
+  padding-top: 2.13333333rem;
+}
+section div:nth-of-type(1) {
+  height: 5.54666667rem;
+}
+section div:nth-of-type(n+2) {
+  padding: 0.36266667rem 0.42666667rem;
+  border-bottom: 0.02133333rem solid #dddddd;
+}
+section h4 {
+  height: 1.10933333rem;
+  line-height: 1.10933333rem;
+  font-size: 0.68266667rem;
+  font-weight: normal;
+}
+section span {
+  display: block;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  font-size: 0.55466667rem;
+}
+.checkIn {
+  width: 12.8rem;
+  height: 1.87733333rem;
+  border-radius: 0.21333333rem;
+  background: red;
+  font-size: 0.55466667rem;
+  text-align: center;
+  line-height: 1.87733333rem;
+  margin-left: 0.42666667rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0.512rem;
+}

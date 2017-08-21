@@ -1,0 +1,83 @@
+.communicate {
+  padding-left: 0.42666667rem;
+  padding-bottom: 2.13333333rem;
+  position: relative;
+  top: 2.13333333rem;
+  background: #fff;
+}
+.communicate li {
+  height: 2.02666667rem;
+  padding: 0.384rem 0 0.10666667rem;
+  border-bottom: 1px solid #e6e8ea ;
+}
+.communicate li span,
+.communicate li i,
+.communicate li em {
+  display: block;
+}
+.communicate li em {
+  height: 2.02666667rem;
+  width: 2.02666667rem;
+  float: left;
+}
+.communicate li div {
+  float: left;
+  padding-left: 0.68266667rem;
+}
+.communicate li span {
+  font-size: 0.68266667rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  color: #333;
+}
+.communicate li i {
+  font-size: 0.55466667rem;
+  height: 0.85333333rem;
+  line-height: 0.85333333rem;
+  color: #999999;
+}
+.communicate li:nth-of-type(even) em {
+  background: url(../images/photos.png) no-repeat center;
+}
+.communicate li:nth-of-type(odd) em {
+  background: url(../images/photos1.png) no-repeat center;
+}
+header.whiteBg {
+  box-shadow: 0 1px 0 1px #ccc;
+}
+header.whiteBg h4 {
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  align-items: center;
+}
+header.whiteBg h4 span {
+  font-weight: normal;
+  font-size: 0.64rem;
+  height: 0.896rem;
+  line-height: 0.896rem;
+  display: block;
+}
+header.whiteBg h4 span.redBorder {
+  border-bottom: 0.04266667rem solid #fb6f65;
+}
+.comSearch {
+  box-sizing: border-box;
+  height: 2.13333333rem;
+  padding: 0.42666667rem;
+  position: fixed;
+  top: 2.73066667rem;
+  width: 100%;
+  background: #F8F8F8;
+  z-index: 10;
+}
+.comSearch input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.42666667rem;
+  -webkit-appearance: none;
+  border: none;
+  font-size: 0.64rem;
+  text-indent: 0.64rem;
+  color: #666666;
+}

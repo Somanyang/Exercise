@@ -1,0 +1,63 @@
+body {
+  background: #F6F6F6;
+}
+header {
+  background: #fff;
+  border-bottom: 0.02133333rem solid #dddddd;
+}
+section {
+  padding-top: 2.13333333rem;
+}
+li {
+  margin: 0 auto;
+  width: 15.14666667rem;
+  border: 0.02133333rem solid #dddddd;
+  border-radius: 0.21333333rem;
+  background: #fff;
+}
+li dl {
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
+}
+li dt {
+  font-size: 0.768rem;
+  height: 3.2rem;
+  box-sizing: border-box;
+  padding-top: 1.70666667rem;
+  line-height: 1.49333333rem;
+  color: #FB6F65;
+}
+li dd {
+  font-size: 0.512rem;
+  color: #acacac;
+  height: 2.13333333rem;
+  line-height: 0.64rem;
+}
+li dl:nth-of-type(2) dt {
+  font-size: 1.28rem;
+  padding-top: 0.64rem;
+  line-height: 3.2rem;
+}
+li dl:nth-of-type(2) dd {
+  font-size: 0.55466667rem;
+  line-height: 1.06666667rem;
+}
+li h4 {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  text-indent: 0.21333333rem;
+  font-size: 0.55466667rem;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+}
+li h4 i {
+  color: #FB6F65 ;
+  font-weight: bold;
+}
+li div:last-child {
+  min-height: 1.152rem;
+  background: url(../images/unfold.png) no-repeat center;
+  background-size: 10%;
+}

@@ -1,0 +1,165 @@
+.canlender {
+  height: 4.56533333rem;
+  border-top: 0.02133333rem solid #dddddd;
+  border-bottom: 0.02133333rem solid #dddddd;
+  padding: 0 0.85333333rem 0.55466667rem;
+  background: #fff;
+  margin-top: 0.32rem;
+  margin-bottom: 0.32rem;
+}
+.canlender p {
+  height: 1.36533333rem;
+  padding-top: 0.10666667rem;
+  line-height: 1.36533333rem;
+  font-size: 0.512rem;
+  text-align: center;
+  color: #999;
+}
+.canlender .weeks {
+  height: 1.06666667rem;
+  border-bottom: 0.02133333rem solid #dddddd;
+}
+.canlender li {
+  float: left;
+  width: 0.85333333rem;
+  text-align: center;
+  line-height: 1.06666667rem;
+  font-size: 0.512rem;
+}
+.canlender li + li {
+  margin-left: 1.38666667rem;
+}
+.canlender li:first-of-type {
+  color: #999;
+}
+.canlender .days {
+  height: 0.85333333rem;
+  line-height: 0.85333333rem;
+  padding: 0.55466667rem 0;
+}
+.canlender .days li {
+  font-size: 0.59733333rem;
+}
+.canlender .today {
+  background: #F66158;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.32rem #f66158;
+}
+.scheList {
+  border-top: 0.02133333rem solid #dddddd;
+  background: #ffffff url(../images/schebg.png) no-repeat 0 1.664rem;
+  height: 17.74933333rem;
+  overflow: hidden;
+}
+.scheList p {
+  height: 1.664rem;
+  line-height: 1.664rem;
+  font-size: 0.512rem;
+  text-indent: 0.85333333rem;
+  border-bottom: 0.02133333rem solid #dddddd;
+}
+#addSche {
+  position: fixed;
+  display: block;
+  width: 2.13333333rem;
+  height: 2.13333333rem;
+  background: #FB6F65;
+  border-radius: 50%;
+  right: 0.85333333rem;
+  bottom: 2.77333333rem;
+  text-align: center;
+  line-height: 1.92rem;
+  color: #fff;
+  font-size: 1.92rem;
+  box-shadow: 0 0 0.10666667rem 0 #f66158;
+  z-index: 10;
+}
+#addPage {
+  width: 16rem;
+  height: 28.45866667rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 249, 250, 0.97);
+  z-index: 92;
+  color: #666;
+}
+#addPage .timeShow {
+  position: absolute;
+  top: 4.26666667rem;
+  left: 2.13333333rem;
+  height: 2.13333333rem;
+}
+#addPage .timeShow span {
+  float: left;
+  font-size: 1.408rem;
+  line-height: 1.49333333rem;
+  padding: 0.32rem;
+  font-weight: bold;
+}
+#addPage .timeShow span em {
+  display: block;
+  font-weight: normal;
+  font-size: 0.512rem;
+  line-height: 0.74666667rem;
+}
+#addPage p {
+  position: absolute;
+  left: 2.13333333rem;
+  top: 6.4rem;
+  height: 0.85333333rem;
+  line-height: 0.85333333rem;
+  font-size: 0.55466667rem;
+  width: 70%;
+}
+#addPage .chooseItem {
+  position: absolute;
+  top: 13.65333333rem;
+  padding: 0 1.408rem;
+}
+#addPage .chooseItem dl {
+  padding: 1.49333333rem 0.896rem 0;
+  width: 2.56rem;
+  font-size: 0.512rem;
+  float: left;
+}
+#addPage .chooseItem dt {
+  width: 2.56rem;
+  height: 2.56rem;
+}
+#addPage .chooseItem dd {
+  text-align: center;
+  height: 0.512rem;
+  line-height: 0.512rem;
+  padding-top: 0.59733333rem;
+}
+#addPage .chooseItem dl:nth-of-type(1) dt {
+  background: url(../images/add1.png) no-repeat center;
+}
+#addPage .chooseItem dl:nth-of-type(2) dt {
+  background: url(../images/add2.png) no-repeat center;
+}
+#addPage .chooseItem dl:nth-of-type(3) dt {
+  background: url(../images/add3.png) no-repeat center;
+}
+#addPage .chooseItem dl:nth-of-type(4) dt {
+  background: url(../images/add4.png) no-repeat center;
+}
+#addPage .chooseItem dl:nth-of-type(5) dt {
+  background: url(../images/add5.png) no-repeat center;
+}
+#addPage .close {
+  position: absolute;
+  bottom: 0;
+  height: 1.83466667rem;
+  line-height: 1.83466667rem;
+  text-align: center;
+  font-size: 1.06666667rem;
+  width: 100%;
+}
+#addPage .close span {
+  display: block;
+  margin: 0 auto;
+  width: 2.13333333rem;
+}
