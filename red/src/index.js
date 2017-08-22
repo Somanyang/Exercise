@@ -12,6 +12,7 @@ import Sche from './component/Sche';
 import Me from './component/Me';
 import Charts from './component/Charts';
 import IndexSet from './component/IndexSet';
+import Attendence from './component/Attendence';
 let img=require('./images/photo.png');
 class Login extends Component{
 	constructor(props){
@@ -280,11 +281,11 @@ ReactDOM.render(
 				{
 					name:'setting',
 					component:<IndexSet />
-				}
-//				{
-//					name:'inform',
-//					component:<Inform />
-//				},
+				},
+				{
+					name:'attendence',
+					component:<Attendence />
+				},
 //				{
 //					name:'items',
 //					component:<Items />

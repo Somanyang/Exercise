@@ -1955,7 +1955,7 @@ let data = {
 			},
 			{
 				createDate: 20,
-				details: [{
+				detail: [{
 					marketName: '海港区生态谷西区11-9',
 					marketAdd: '河北省秦皇岛市海港区海港区北港大街与民族路交叉路西生态谷西区正门口外',
 					marketType: '非转店',
@@ -1966,7 +1966,7 @@ let data = {
 			},
 			{
 				createDate: 22,
-				details: [{
+				detail: [{
 						marketName: '海港区缘顺超市',
 						marketAdd: '河北省秦皇岛市海港区海港区河北大街与建国路交叉南行500米秦皇小区民族南路福地西行200米',
 						marketType: '非转店',
@@ -1986,7 +1986,7 @@ let data = {
 			},
 			{
 				createDate: 24,
-				details: [{
+				detail: [{
 						marketName: '海港区隆客隆超市',
 						marketAdd: '河北省秦皇岛市海港区海港区海滨路与文化路交叉口西行50米秦皇岛港斜对面',
 						marketType: '非转店',
@@ -2014,7 +2014,7 @@ let data = {
 			},
 			{
 				createDate: 26,
-				details: [{
+				detail: [{
 						marketName: '海港区迎迎超市',
 						marketAdd: '河北省秦皇岛市海港区海港区东北大学对面美岭小区',
 						marketType: '非转店',
@@ -2034,7 +2034,7 @@ let data = {
 			},
 			{
 				createDate: 28,
-				details: [{
+				detail: [{
 					marketName: '海港区良宇超市',
 					marketAdd: '河北省秦皇岛市海港区海港区建设大街与广场西路交叉南行500米康乐里',
 					marketType: '非转店',

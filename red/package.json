@@ -5,7 +5,9 @@
   "dependencies": {
     "axios": "^0.16.2",
     "echarts": "^3.6.2",
+    "jquery": "^3.2.1",
     "react": "^15.6.1",
+    "react-bmap": "^1.0.34",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11",

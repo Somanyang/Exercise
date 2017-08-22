@@ -317,9 +317,10 @@ footer .redColor {
   overflow: hidden;
 }
 #contWrap {
-  position: absolute;
+  position: fixed;
+  overflow-x:hidden ;
   width: 100%;
-  top: 2.73066667rem;
+  top: 2.70066666rem;
   left: 0;
   height: 23.57333333rem;
 }
@@ -412,12 +413,12 @@ footer .redColor {
   position: relative;
   background: #f9f9f9;
   top: 0rem;
-  height: 21.33333333rem;
+//height: 20.03333333rem;
 }
 #main .list {
   height: 4.48rem;
   background: #fff;
-  margin-bottom: 0.42666667rem;
+  margin-bottom: 0.42666667rem;   
 }
 #main .list li {
   float: left;
@@ -449,7 +450,10 @@ footer .redColor {
 #main div {
   min-height: 4.48rem;
   background: #fff;
-  margin-bottom: 0.42666667rem;
+ 
+}
+#main div+div{
+     margin-top: 0.42666667rem;
 }
 #main div h4 {
   height: 1.28rem;
@@ -465,7 +469,7 @@ footer .redColor {
 }
 .communicate {
   padding-left: 0.42666667rem;
-  padding-bottom: 2.13333333rem;
+//padding-bottom: 2.13333333rem;
   position: relative;
   top: 2.13333333rem;
   background: #fff;
@@ -548,7 +552,7 @@ header.whiteBg h4 span.redBorder {
 }
 .clients {
   padding-left: 0.53333333rem;
-  padding-bottom: 2.13333333rem;
+//padding-bottom: 2.13333333rem;
   position: relative;
   top: 2.13333333rem;
   background: #fff;
@@ -646,6 +650,7 @@ header.whiteBg h4 span.redBorder {
 .scheList {
   border-top: 0.02133333rem solid #dddddd;
   background: #ffffff url(../images/schebg.png) no-repeat 0 1.664rem;
+  background-size:100% ;
   height: 17.74933333rem;
   overflow: hidden;
 }
@@ -666,7 +671,7 @@ header.whiteBg h4 span.redBorder {
   right: 0.85333333rem;
   bottom: 2.77333333rem;
   text-align: center;
-  line-height: 1.92rem;
+  line-height: 1.98rem;
   color: #fff;
   font-size: 1.92rem;
   box-shadow: 0 0 0.10666667rem 0 #f66158;
@@ -877,7 +882,7 @@ dl.cubeItem:nth-of-type(7) dt {
   background: url(../images/got.png) no-repeat left center;
 }
 #contWrap.chartWrap{
-    height: 100%;
+    height: 91%;
 }
 .chartsList{
     padding: 9/@rem 18/@rem;
@@ -956,4 +961,53 @@ dl.cubeItem:nth-of-type(7) dt {
             }
         }
     }
+}
+
+#map{
+    width: 100%;
+    height: 300/@rem;
+    border-bottom: 1/@rem solid #ddd;
+    background: #fff;
+}
+.attendInfo{
+    height: 862/@rem;
+    background: #fff;
+    padding: 0 25/@rem;
+    li{
+        
+        padding: 16/@rem 0;
+        border-bottom: 1/@rem solid #ddd;
+        span{
+            display: block;
+            font-size: 32/@rem;
+            line-height: 56/@rem;
+            height: 56/@rem;
+            color: #333333;
+        }
+        i{
+            font-size: 26/@rem;
+            height: 50/@rem;
+            line-height: 50/@rem;
+            color: #999;
+        }
+    }
+}
+.in,.out{
+    position: absolute;
+    bottom: 40/@rem;
+    display: block;
+    width: 600/@rem;
+    height: 80/@rem;
+    line-height: 80/@rem;
+    color: #fff;
+    left:75/@rem;
+    text-align: center;
+    font-size:40/@rem ;
+    border-radius: 20/@rem;
+}
+.out{
+    background: #FB6F65;
+}
+.in{
+    background: darkseagreen;
 }

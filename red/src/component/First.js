@@ -8,8 +8,9 @@ class Index extends Component{
 	constructor(){
 		super();
 		this.state={
-			scrollOnoff:false,
 			n:0,
+			initx:0,
+			onOff:false,
 			data:JSON.parse(localStorage.getItem('Data'))
 		}
 	}
@@ -88,6 +89,7 @@ class Index extends Component{
 					}
 				})
 			}
+			//由于数据模拟需要将未来日期的数据进行删除
 			if(e.date>today){
 				e.desc.forEach((e,i)=>{
 					futureVistArr=futureVistArr.concat(e.detail);
@@ -99,7 +101,9 @@ class Index extends Component{
 		//本月覆盖数
 		monthVist=monthVistArr.length-futureVistArr.length;
 		//昨日人均拜访
-		yesterdayAverage=Math.round(yesterdayVist/yesterdayTimes);
+		if(yesterdayTimes){
+			yesterdayAverage=Math.round(yesterdayVist/yesterdayTimes);
+		}
 		//本月人均拜访
 		monthAverage=Math.round(monthVist/people.length);
 		keywords[0].detail[1][0]=monthAverage;
@@ -115,8 +119,8 @@ class Index extends Component{
 		})
 	}
 	componentDidMount(){
-		let {n,data}=this.state;
-		let data2=Object.assign(data)
+		let {n,data,onOff}=this.state;
+		let data2=Object.assign(data);
 		this.timer=setInterval(()=>{
 			let timer=null;
 			timer=setInterval(()=>{
@@ -124,11 +128,13 @@ class Index extends Component{
 					let ite=data2.keywords.splice(0,1)[0];
 					data2.keywords.push(ite);
 					n=1;
-					clearInterval(timer)
+					onOff=true;
+					clearInterval(timer);
 				}
 				this.setState({
 					n:--n,
-					data:data2
+					data:data2,
+					onOff:onOff
 				})
 			},80)
 			
@@ -137,8 +143,79 @@ class Index extends Component{
 	componentWillUnmount(){
 		clearInterval(this.timer)
 	}
-	touchMove=(ev)=>{
-//		console.log(ev.changedTouches[0])
+	banTouchStart=(ev)=>{
+		let {n,onOff,initx}=this.state;
+		clearInterval(this.timer);
+		if(n===0)onOff=true;
+		initx=ev.changedTouches[0].pageX;
+		this.setState({
+			initx:initx,
+			onOff:true
+		})
+	}
+	banTouchMove=(ev)=>{
+		let{initx,n,onOff}=this.state;
+		if(onOff){
+			n=ev.changedTouches[0].pageX-initx;
+			n=Math.round(n/75);
+			this.setState({
+				n:n
+			})
+		}
+		
+	}
+	banTouchEnd=(ev)=>{
+		let {n,data}=this.state;
+		let data2=Object.assign(data);
+		setTimeout(()=>{
+			let timer=null;
+			timer=setInterval(()=>{
+				if(n<0){
+					if(n===-10){
+						let ite=data2.keywords.splice(0,1)[0];
+						data2.keywords.push(ite);
+						n=1;
+						clearInterval(timer);
+					}
+					this.setState({
+						n:--n,
+						data:data2,
+						onOff:false
+					})
+					
+				}else{
+					if(n===10){
+						let ite=data2.keywords.splice(2,1)[0];
+						data2.keywords.unshift(ite);
+						n=-1;
+						clearInterval(timer);
+					}
+					this.setState({
+						n:++n,
+						data:data2,
+						onOff:false
+					})
+				}
+				
+			},80)
+			
+		})
+		this.timer=setInterval(()=>{
+			let timer=null;
+			timer=setInterval(()=>{
+				if(n===-10){
+					let ite=data2.keywords.splice(0,1)[0];
+					data2.keywords.push(ite);
+					n=1;
+					clearInterval(timer);
+				}
+				this.setState({
+					n:--n,
+					data:data2
+				})
+			},80)
+			
+		},6000)
 	}
 	render(){
 		let banners=null;
@@ -170,11 +247,16 @@ class Index extends Component{
 		return(
 			<div id="outerWrap">
 				{header}
-				<div id="contWrap" className="contWrap" onTouchMove={this.touchMove}>
+				<div id="contWrap" className="contWrap" >
 					<div id="content" ref={(ele)=>this.cont=ele}>
 						<section className="clear-fix firstSec">
 							<div className="bg"></div>
-							<div className="bans" style={{transform:`translate(${this.state.n}rem)`}}>{banners}</div>
+							<div className="bans" 
+								style={{transform:`translate(${this.state.n}rem)`}}
+								onTouchStart={this.banTouchStart}
+								onTouchMove={this.banTouchMove}
+								onTouchEnd={this.banTouchEnd}
+							>{banners}</div>
 						</section>
 						<div id="main">
 							<ul className="list clear-fix">
@@ -206,12 +288,21 @@ class Index extends Component{
 
 class FirstBanner extends Component{
 	render(){
-		let n=null;;
-		if(this.props.id===1){
-			n=1+this.props.n*0.02;
-		}else{
-			n=0.8-this.props.n*0.02;
+		let n=null;
+		if(this.props.n<=0){
+			if(this.props.id===1){
+				n=1+this.props.n*0.02;
+			}else{
+				n=0.8-this.props.n*0.02;
+			}
+		}else if(this.props.n>=0){
+			if(this.props.id===1){
+				n=1-this.props.n*0.02;
+			}else{
+				n=0.8+this.props.n*0.02;
+			}
 		}
+		
 		
 		return(
 			<div className="banner" style={{transform:`scale(${n})`}}>

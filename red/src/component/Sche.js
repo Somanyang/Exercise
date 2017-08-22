@@ -46,11 +46,12 @@ class Sche extends Component{
 		let month=now.getMonth()+1;
 		let week=now.getDay();
 		let date=now.getDate()+(0-week);
-		let firstDay=new Date(year+'/'+month+'/'+date);//只可用'/'，不然手机显示为NaN，
 		//根据今天星期几来判断应该显示的是哪几天
 		let days=[];
 		for(let i=0;i<7;i++){
-			let day=firstDay.getDate()+i;
+			let firstDay=new Date(year,month-1,date);
+			firstDay.setDate(firstDay.getDate()+i);
+			let day=firstDay.getDate();
 			let today=(day===now.getDate())?'today':'';
 			days.push(<li className={today} key={i}>{day}</li>)
 		}
@@ -111,7 +112,7 @@ class ScheAdd extends Component{
 	}
 	render(){
 		//随机句子
-		let sentence=['心有多大，舞台就有多大','只有想不到的，没有做不到的','没有天生的信心，只有不断培养的信心','胜利不是战胜敌人，而是提高自己','风雨夏秋冬，十年磨一剑','风雨夏秋冬，十年磨一剑不必遗憾。若是美好，叫做精彩。若是糟糕，叫做经历','人生的成功不过是在紧要处多一份坚持'];
+		let sentence=['心有多大，舞台就有多大','有理想的人，生活总是火热的','既然开始，就做到最好','伟大的行动和思想，都有一个微不足道的开始','我们自己的态度，决定了我们的人生','只有想不到的，没有做不到的','没有天生的信心，只有不断培养的信心','胜利不是战胜敌人，而是提高自己','风雨夏秋冬，十年磨一剑','风雨夏秋冬，十年磨一剑不必遗憾。若是美好，叫做精彩。若是糟糕，叫做经历','人生的成功不过是在紧要处多一份坚持'];
 		let itemsArr=['新建拜访','拜访路线','新建任务','新建会议','新建培训'];
 		let items=itemsArr.map((e,i)=>{
 			let dlData={

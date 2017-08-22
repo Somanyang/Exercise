@@ -76,7 +76,7 @@ class ChartItem extends Component{
 			let year=now.getFullYear();
 			let arrDate=[];
 			for(let i=0;i<7;i++){
-				let now=new Date(year+'/'+month+'/'+(today-i));
+				let now=new Date(year,month-1,(today-i));
 				let mon=now.getMonth()+1;
 				let day=now.getDate();
 				
