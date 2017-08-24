@@ -11,6 +11,7 @@ class Index extends Component{
 			n:0,
 			initx:0,
 			onOff:false,
+			background:{background:'rgba(255,255,255,0)'},
 			data:JSON.parse(localStorage.getItem('Data'))
 		}
 	}
@@ -217,11 +218,19 @@ class Index extends Component{
 			
 		},6000)
 	}
+	moveUp=()=>{
+		let h=this.cont.getBoundingClientRect().top;
+		let opacity=Math.round(128-h)/12.8/10;
+		this.setState({
+			background:{background:`rgba(255,255,255,${opacity})`}
+		})
+		
+	}
 	render(){
 		let banners=null;
 		let header=null;
 		let footer=null;
-		let{data}=this.state;
+		let{data,background}=this.state;
 		banners=data.keywords.map((e,i)=>{
 			if(i<3){
 				let data2={
@@ -240,15 +249,18 @@ class Index extends Component{
 			nameL:'chart',
 			nameR:'setting',
 			title:<h4>首页</h4>,
-			classname:'redBg'
+			classname:'whiteBg',
+			background:background
+			
 		}
 		header=<Header {...dataH}/>
 		footer=<Footer n="0"/>
 		return(
 			<div id="outerWrap">
+				<div className="headerRedBg"></div>
 				{header}
-				<div id="contWrap" className="contWrap" >
-					<div id="content" ref={(ele)=>this.cont=ele}>
+				<div id="contWrap" className="contWrap firstContWrap" >
+					<div id="content" ref={(ele)=>this.cont=ele} onTouchMove={this.moveUp}>
 						<section className="clear-fix firstSec">
 							<div className="bg"></div>
 							<div className="bans" 
@@ -288,6 +300,7 @@ class Index extends Component{
 
 class FirstBanner extends Component{
 	render(){
+		//banner的动态
 		let n=null;
 		if(this.props.n<=0){
 			if(this.props.id===1){

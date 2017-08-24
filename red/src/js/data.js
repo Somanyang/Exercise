@@ -1092,7 +1092,7 @@ let data = {
 						},
 						{
 							marketName: '北戴河区广缘超市牛头崖店',
-							marketAdd: '河北省秦皇岛市抚宁区北戴河区北戴河火车站西侧牛头崖大集对面',
+							marketAdd: '河北省秦皇岛市北戴河区北戴河火车站西侧牛头崖大集对面',
 							marketType: '非转店',
 							marketClass: '中型超市',
 							marketLinkMen: '韩女士',
@@ -1383,7 +1383,7 @@ let data = {
 					name: '张猛',
 					detail: [{
 							marketName: '北戴河区艾欣超市南戴河店天开店',
-							marketAdd: '河北省秦皇岛市抚宁区北戴河区南戴宁海道与新裕路交叉口西20米（避暑花园小区东侧）',
+							marketAdd: '河北省秦皇岛市北戴河区南戴宁海道与新裕路交叉口西20米（避暑花园小区东侧）',
 							marketType: '绿标店',
 							marketClass: '中型超市',
 							marketLinkMen: '李女士',
@@ -1391,7 +1391,7 @@ let data = {
 						},
 						{
 							marketName: '北戴河区艾欣超市富强店',
-							marketAdd: '河北省秦皇岛市抚宁区北戴河区牛头崖镇迎宾大道20号（富强小区门口）',
+							marketAdd: '河北省秦皇岛市北戴河区牛头崖镇迎宾大道20号（富强小区门口）',
 							marketType: '绿标店',
 							marketClass: '中型超市',
 							marketLinkMen: '宋女士',
@@ -1553,7 +1553,7 @@ let data = {
 					name: '刘方',
 					detail: [{
 							marketName: '北戴河区艾欣超市海岳店',
-							marketAdd: '河北省秦皇岛市抚宁区北戴河区联峰路与北四路交叉口（北四路二号）',
+							marketAdd: '河北省秦皇岛市北戴河区联峰路与北四路交叉口（北四路二号）',
 							marketType: '绿标店',
 							marketClass: '小型超市',
 							marketLinkMen: '张女士',
@@ -1621,7 +1621,7 @@ let data = {
 				detail: [{
 						marketName: '昌黎县鑫发购物广场',
 						marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黄连接线小蒲河村路段西侧',
-						marketType: '非福临门售点',
+						marketType: '非售点',
 						marketClass: '食杂店',
 						marketLinkMen: '李世洪',
 						marketLinkTel: '3352083609'
@@ -1629,7 +1629,7 @@ let data = {
 					{
 						marketName: '昌黎县硕硕超市',
 						marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县茹荷镇大滩村',
-						marketType: '非福临门售点',
+						marketType: '非售点',
 						marketClass: '食杂店',
 						marketLinkMen: '曹妮玛',
 						marketLinkTel: '13780564260'
@@ -2086,7 +2086,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县成标粮油',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县卢昌线马庄路口东5里',
+				marketAdd: '河北省秦皇岛市昌黎县卢昌线马庄路口东5里',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '刘姨',
@@ -2104,7 +2104,7 @@ let data = {
 
 			{
 				marketName: '昌黎县阿亮士便利店',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇小李庄村',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇小李庄村',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '孟哥',
@@ -2112,7 +2112,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县格碧超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县荒佃庄镇皇后寨镇赤崖路口东路北',
+				marketAdd: '河北省秦皇岛市昌黎县荒佃庄镇皇后寨镇赤崖路口东路北',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张树全',
@@ -2121,7 +2121,7 @@ let data = {
 
 			{
 				marketName: '昌黎县艳霞蔬菜店',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县刘台庄镇家惠超市北500米',
+				marketAdd: '河北省秦皇岛市昌黎县刘台庄镇家惠超市北500米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '熊志强',
@@ -2129,7 +2129,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县百美通超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇牛关营村小学南50米',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇牛关营村小学南50米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '田叔',
@@ -2137,7 +2137,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县易购超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县东大市场北东山新天地小区旁',
+				marketAdd: '河北省秦皇岛市昌黎县东大市场北东山新天地小区旁',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '肖任民',
@@ -2145,7 +2145,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县老贾超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇裴家堡村委会对面',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇裴家堡村委会对面',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '常琦',
@@ -2153,7 +2153,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县欣鑫佰顺超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县指挥街路西',
+				marketAdd: '河北省秦皇岛市昌黎县指挥街路西',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '杨大哥',
@@ -2161,7 +2161,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县马坨店立文超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县靖安街十字路口东路北',
+				marketAdd: '河北省秦皇岛市昌黎县靖安街十字路口东路北',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张哥',
@@ -2169,7 +2169,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县双杰批发部',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县马坨店镇路东',
+				marketAdd: '河北省秦皇岛市昌黎县马坨店镇路东',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '许瑞祥',
@@ -2177,7 +2177,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县亚森超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇棚子里村主街十字路口',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇棚子里村主街十字路口',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '徐清华',
@@ -2185,7 +2185,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县裴家堡艾欣超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇黄土湾村客运站旁',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇黄土湾村客运站旁',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '闫玉梅',
@@ -2193,7 +2193,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县立文超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县体育馆对面',
+				marketAdd: '河北省秦皇岛市昌黎县体育馆对面',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '高玉新',
@@ -2201,7 +2201,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县惠源超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县地王大街白天鹅宾馆对过',
+				marketAdd: '河北省秦皇岛市昌黎县地王大街白天鹅宾馆对过',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '杨欢',
@@ -2209,7 +2209,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县粮油店',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县卢昌线十里铺西行2里',
+				marketAdd: '河北省秦皇岛市昌黎县卢昌线十里铺西行2里',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '韩姐',
@@ -2217,7 +2217,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县兴旺超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县卢昌线马庄路口东5里',
+				marketAdd: '河北省秦皇岛市昌黎县卢昌线马庄路口东5里',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '田叔',
@@ -2225,7 +2225,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县军粮特供',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县卢昌线张各庄大集',
+				marketAdd: '河北省秦皇岛市昌黎县卢昌线张各庄大集',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '苗姨',
@@ -2233,7 +2233,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县紫光双马蔬菜',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县龙家店镇中学东500米路南',
+				marketAdd: '河北省秦皇岛市昌黎县龙家店镇中学东500米路南',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '常贵玲',
@@ -2241,7 +2241,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县供销超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县滦昌线龙家店大集对过',
+				marketAdd: '河北省秦皇岛市昌黎县滦昌线龙家店大集对过',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '闫玉梅',
@@ -2249,7 +2249,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县凡香超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县团林街道潮河村十字路口处',
+				marketAdd: '河北省秦皇岛市昌黎县团林街道潮河村十字路口处',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '周长英',
@@ -2257,7 +2257,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县张各庄小卖部',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇张各庄村委会北100米',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇张各庄村委会北100米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '杨树波',
@@ -2265,7 +2265,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县鹏飞超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇牛官营村完全小学东500米',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇牛官营村完全小学东500米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '周丽华',
@@ -2273,7 +2273,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县浩金凯超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县团林街道赤洋口村公车终点站西200米',
+				marketAdd: '河北省秦皇岛市昌黎县团林街道赤洋口村公车终点站西200米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张会和',
@@ -2281,7 +2281,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县萍莉超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县团林街道团林中村卫生室南103米',
+				marketAdd: '河北省秦皇岛市昌黎县团林街道团林中村卫生室南103米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '马超',
@@ -2289,7 +2289,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县谊缘超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇裴家堡村大集对面',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇裴家堡村大集对面',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张树全',
@@ -2297,7 +2297,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县卫华超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇张各庄村委会东100米',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇张各庄村委会东100米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '赵姐',
@@ -2313,7 +2313,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县广杰超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县团林街道潮河村口东100米',
+				marketAdd: '河北省秦皇岛市昌黎县团林街道潮河村口东100米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '马大哥',
@@ -2321,7 +2321,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县大蒲河宏达超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇牛官营村完全小学北300米',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇牛官营村完全小学北300米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '熊志强',
@@ -2329,7 +2329,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县宇顺超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黄连接线小蒲河村路段西侧',
+				marketAdd: '河北省秦皇岛市昌黎县昌黄连接线小蒲河村路段西侧',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '李凡',
@@ -2337,7 +2337,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县家惠冀川超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县碣阳大街中段',
+				marketAdd: '河北省秦皇岛市昌黎县碣阳大街中段',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '雷明',
@@ -2385,7 +2385,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县静花超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县小东山南侧三角地西',
+				marketAdd: '河北省秦皇岛市昌黎县小东山南侧三角地西',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '李明',
@@ -2393,7 +2393,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县马坨店家惠超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县黎昌尚府小区北门',
+				marketAdd: '河北省秦皇岛市昌黎县黎昌尚府小区北门',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '刘福金',
@@ -2401,7 +2401,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县艾欣超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县党各庄西行50米',
+				marketAdd: '河北省秦皇岛市昌黎县县党各庄西行50米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '冯东波',
@@ -2417,7 +2417,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县秦庄超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县刘台庄镇家惠超市北200米',
+				marketAdd: '河北省秦皇岛市昌黎县刘台庄镇家惠超市北200米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '王哥',
@@ -2441,7 +2441,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县五街艾欣超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黎四街铁塔对面',
+				marketAdd: '河北省秦皇岛市昌黎县昌黎四街铁塔对面',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '刘巨龙',
@@ -2449,7 +2449,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县玉辉粮油',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县五街立交桥兴华小区对面',
+				marketAdd: '河北省秦皇岛市昌黎县五街立交桥兴华小区对面',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '杨鹏达',
@@ -2465,7 +2465,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县马超粮油',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黎至乐亭县道虹桥乡邢庄段路西',
+				marketAdd: '河北省秦皇岛市昌黎县昌黎至乐亭县道虹桥乡邢庄段路西',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '章荷叶',
@@ -2473,7 +2473,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县百惠超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县碣石山市场',
+				marketAdd: '河北省秦皇岛市昌黎县碣石山市场',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张玉霞',
@@ -2481,7 +2481,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县跃兴超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县建设大厦南500米路西',
+				marketAdd: '河北省秦皇岛市昌黎县建设大厦南500米路西',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '刘超',
@@ -2497,7 +2497,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县桐桐超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黎南外环黎昌滨城小区南门',
+				marketAdd: '河北省秦皇岛市昌黎县昌黎南外环黎昌滨城小区南门',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '王爱东',
@@ -2505,7 +2505,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县蔬菜店',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县仙台路民政局楼下',
+				marketAdd: '河北省秦皇岛市昌黎县仙台路民政局楼下',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '曹凤全',
@@ -2513,7 +2513,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县致城超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县二街菜市场',
+				marketAdd: '河北省秦皇岛市昌黎县二街菜市场',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '丁桂华',
@@ -2529,7 +2529,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县甜宇超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县茹荷镇中蚴榆树',
+				marketAdd: '河北省秦皇岛市昌黎县茹荷镇中蚴榆树',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '王老板',
@@ -2537,7 +2537,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县欢迎超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县两山乡杏树园村口路右侧',
+				marketAdd: '河北省秦皇岛市昌黎县两山乡杏树园村口路右侧',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '冯东波',
@@ -2545,7 +2545,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县丰源超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县茹荷镇大滩村',
+				marketAdd: '河北省秦皇岛市昌黎县茹荷镇大滩村',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '孙大姐',
@@ -2553,7 +2553,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县景昊超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县团林街道贾河北村三岔口处村东头',
+				marketAdd: '河北省秦皇岛市昌黎县团林街道贾河北村三岔口处村东头',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '杨先波',
@@ -2561,7 +2561,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县路源来便民超市',
-				marketAdd: '河北省秦皇岛市昌黎县河北省秦皇岛市昌黎县泥井镇261省道',
+				marketAdd: '河北省秦皇岛市昌黎县泥井镇261省道',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '路老板',
@@ -2569,7 +2569,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县民华超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县大蒲河镇大蒲河村村委会西100米',
+				marketAdd: '河北省秦皇岛市昌黎县大蒲河镇大蒲河村村委会西100米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '居小金',
@@ -2577,7 +2577,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县顺鑫超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县茹荷镇',
+				marketAdd: '河北省秦皇岛市昌黎县茹荷镇',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '郭建民',
@@ -2585,7 +2585,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县东门超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县十里铺西路北500米',
+				marketAdd: '河北省秦皇岛市昌黎县十里铺西路北500米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张占鑫',
@@ -2593,7 +2593,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县葡萄沟超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黎三中西侧糖厂小区门口',
+				marketAdd: '河北省秦皇岛市昌黎县昌黎三中西侧糖厂小区门口',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '卞运年',
@@ -2601,7 +2601,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县鑫泰超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黎县帝王酒厂对过',
+				marketAdd: '河北省秦皇岛市昌黎县昌黎县帝王酒厂对过',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '李姐',
@@ -2609,7 +2609,7 @@ let data = {
 			},
 			{
 				marketName: '昌黎县明辉超市',
-				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黎农校立交桥南路口西',
+				marketAdd: '河北省秦皇岛市昌黎县昌黎农校立交桥南路口西',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '刘哥',
@@ -2625,7 +2625,7 @@ let data = {
 			},
 			{
 				marketName: '北戴河区卓旺粮油调料',
-				marketAdd: '河北省秦皇岛市北戴河区北戴河区刘庄育花路',
+				marketAdd: '河北省秦皇岛市北戴河区刘庄育花路',
 				marketType: '非转店',
 				marketClass: '粮油店',
 				marketLinkMen: '韩女士',
@@ -2633,7 +2633,7 @@ let data = {
 			},
 			{
 				marketName: '海港区福萌超市',
-				marketAdd: '河北省秦皇岛市海港区海港区西港路加油站正对面小区',
+				marketAdd: '河北省秦皇岛市海港区西港路加油站正对面小区',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '李祥志',
@@ -2641,7 +2641,7 @@ let data = {
 			},
 			{
 				marketName: '海港区大高庄粮油',
-				marketAdd: '河北省秦皇岛市海港区海港区北环路与东港路交叉口东行大高庄路口北行1000米路东',
+				marketAdd: '河北省秦皇岛市海港区北环路与东港路交叉口东行大高庄路口北行1000米路东',
 				marketType: '非转店',
 				marketClass: '粮油店',
 				marketLinkMen: '程女士',
@@ -2649,7 +2649,7 @@ let data = {
 			},
 			{
 				marketName: '海港区盘锦大米',
-				marketAdd: '河北省秦皇岛市海港区海港区燕山大街与迎宾路交叉北行报社胡同全方超市南行1000米',
+				marketAdd: '河北省秦皇岛市海港区燕山大街与迎宾路交叉北行报社胡同全方超市南行1000米',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '金艳英',
@@ -2657,7 +2657,7 @@ let data = {
 			},
 			{
 				marketName: '海港区便利批发超市',
-				marketAdd: '河北省秦皇岛市海港区海港区河北大街与红旗路交叉口北20米路西',
+				marketAdd: '河北省秦皇岛市海港区河北大街与红旗路交叉口北20米路西',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '裴先生',
@@ -2665,7 +2665,7 @@ let data = {
 			},
 			{
 				marketName: '海港区昌盛粮油',
-				marketAdd: '河北省秦皇岛市海港区海港区北二环与海阳路交叉北港镇',
+				marketAdd: '河北省秦皇岛市海港区北二环与海阳路交叉北港镇',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '冯女士',
@@ -2673,7 +2673,7 @@ let data = {
 			},
 			{
 				marketName: '海港区丹良超市',
-				marketAdd: '河北省秦皇岛市海港区海港区恒大城小区院内',
+				marketAdd: '河北省秦皇岛市海港区恒大城小区院内',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '蒋丹良',
@@ -2689,7 +2689,7 @@ let data = {
 			},
 			{
 				marketName: '海港区东吉超市',
-				marketAdd: '河北省秦皇岛市海港区海港区港城大街与外环路交叉北行200路西海政里小区双汇冷鲜肉对面',
+				marketAdd: '河北省秦皇岛市海港区港城大街与外环路交叉北行200路西海政里小区双汇冷鲜肉对面',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '高女士',
@@ -2697,7 +2697,7 @@ let data = {
 			},
 			{
 				marketName: '海港区仁和超市',
-				marketAdd: '河北省秦皇岛市海港区海港区北城壹号绿洲小区18栋',
+				marketAdd: '河北省秦皇岛市海港区北城壹号绿洲小区18栋',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '冯女士',
@@ -2705,7 +2705,7 @@ let data = {
 			},
 			{
 				marketName: '海港区北城壹号仁和超市',
-				marketAdd: '河北省秦皇岛市海港区海港区北城壹号20栋一单元',
+				marketAdd: '河北省秦皇岛市海港区北城壹号20栋一单元',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '辛先生',
@@ -2713,7 +2713,7 @@ let data = {
 			},
 			{
 				marketName: '海港区龙市发超市',
-				marketAdd: '河北省秦皇岛市海港区海港区北城壹号小区19栋',
+				marketAdd: '河北省秦皇岛市海港区北城壹号小区19栋',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '龙市发',
@@ -2721,7 +2721,7 @@ let data = {
 			},
 			{
 				marketName: '海港区红墨超市',
-				marketAdd: '河北省秦皇岛市海港区海港区和煦街与友谊路交口西行20米路南',
+				marketAdd: '河北省秦皇岛市海港区和煦街与友谊路交口西行20米路南',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '赵先生',
@@ -2729,7 +2729,7 @@ let data = {
 			},
 			{
 				marketName: '海港区东发粮油',
-				marketAdd: '河北省秦皇岛市海港区海港区北环路柳村村口东行100米路北',
+				marketAdd: '河北省秦皇岛市海港区北环路柳村村口东行100米路北',
 				marketType: '非转店',
 				marketClass: '粮油店',
 				marketLinkMen: '王先生',
@@ -2737,7 +2737,7 @@ let data = {
 			},
 			{
 				marketName: '海港区玖福粮油',
-				marketAdd: '河北省秦皇岛市海港区海港区102国道与西外环交叉海阳批发市场内',
+				marketAdd: '河北省秦皇岛市海港区102国道与西外环交叉海阳批发市场内',
 				marketType: '非转店',
 				marketClass: '批零档口',
 				marketLinkMen: '张磊',
@@ -2745,7 +2745,7 @@ let data = {
 			},
 			{
 				marketName: '北戴河区小鑫峰超市',
-				marketAdd: '河北省秦皇岛市北戴河区北戴河区火车站东300米宝尊超市对过',
+				marketAdd: '河北省秦皇岛市北戴河区火车站东300米宝尊超市对过',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张女士',
@@ -2753,7 +2753,7 @@ let data = {
 			},
 			{
 				marketName: '海港区群赢超市',
-				marketAdd: '河北省秦皇岛市海港区海港区北环路与建国路交叉口燕鑫花苑门口',
+				marketAdd: '河北省秦皇岛市海港区北环路与建国路交叉口燕鑫花苑门口',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '周女士',
@@ -2761,7 +2761,7 @@ let data = {
 			},
 			{
 				marketName: '海港区韩庄蔬菜水果店',
-				marketAdd: '河北省秦皇岛市海港区海港区新102国道与东港路交叉口西行1500米韩庄尚优超市东10米新苑小区',
+				marketAdd: '河北省秦皇岛市海港区新102国道与东港路交叉口西行1500米韩庄尚优超市东10米新苑小区',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '王先生',
@@ -2769,7 +2769,7 @@ let data = {
 			},
 			{
 				marketName: '海港区九三粮油',
-				marketAdd: '河北省秦皇岛市海港区海港区102国道与西外环交叉海阳镇',
+				marketAdd: '河北省秦皇岛市海港区102国道与西外环交叉海阳镇',
 				marketType: '非转店',
 				marketClass: '粮油店',
 				marketLinkMen: '孙女士',
@@ -2777,7 +2777,7 @@ let data = {
 			},
 			{
 				marketName: '海港区邱铁牛超市',
-				marketAdd: '河北省秦皇岛市海港区海港区河北大街与建国路交叉南行500米秦皇小区秦安街市场正门',
+				marketAdd: '河北省秦皇岛市海港区河北大街与建国路交叉南行500米秦皇小区秦安街市场正门',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '邱铁牛',
@@ -2793,7 +2793,7 @@ let data = {
 			},
 			{
 				marketName: '海港区金田粮油',
-				marketAdd: '河北省秦皇岛市海港区海港区燕山大街与民族路交叉西行100米路西八三市场',
+				marketAdd: '河北省秦皇岛市海港区燕山大街与民族路交叉西行100米路西八三市场',
 				marketType: '非转店',
 				marketClass: '粮油店',
 				marketLinkMen: '张晓梅',
@@ -2801,7 +2801,7 @@ let data = {
 			},
 			{
 				marketName: '海港区德旺福超市',
-				marketAdd: '河北省秦皇岛市海港区海港区北港大街与民族北路交叉路西天成壹号小区21栋',
+				marketAdd: '河北省秦皇岛市海港区北港大街与民族北路交叉路西天成壹号小区21栋',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '谢女士',
@@ -2809,7 +2809,7 @@ let data = {
 			},
 			{
 				marketName: '海港区秦乡粮油',
-				marketAdd: '河北省秦皇岛市海港区海港区港城大街与东环路交叉口西行港城市场',
+				marketAdd: '河北省秦皇岛市海港区港城大街与东环路交叉口西行港城市场',
 				marketType: '非转店',
 				marketClass: '粮油店',
 				marketLinkMen: '崔先生',
@@ -2825,7 +2825,7 @@ let data = {
 			},
 			{
 				marketName: '北戴河区广缘超市牛头崖店',
-				marketAdd: '河北省秦皇岛市抚宁区北戴河区北戴河火车站西侧牛头崖大集对面',
+				marketAdd: '河北省秦皇岛市北戴河区北戴河火车站西侧牛头崖大集对面',
 				marketType: '非转店',
 				marketClass: '中型超市',
 				marketLinkMen: '韩女士',
@@ -2833,7 +2833,7 @@ let data = {
 			},
 			{
 				marketName: '海港区常来超市',
-				marketAdd: '河北省秦皇岛市海港区海港区河北大街与东港路交叉口34路终点站海阳学院对过',
+				marketAdd: '河北省秦皇岛市海港区河北大街与东港路交叉口34路终点站海阳学院对过',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '张女士',
@@ -2849,7 +2849,7 @@ let data = {
 			},
 			{
 				marketName: '海港区九斗金超市',
-				marketAdd: '河北省秦皇岛市海港区海港区河北大街中段456号河雅小区门口',
+				marketAdd: '河北省秦皇岛市海港区河北大街中段456号河雅小区门口',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '杨经理',
@@ -2857,7 +2857,7 @@ let data = {
 			},
 			{
 				marketName: '海港区艾欣超市东山店',
-				marketAdd: '河北省秦皇岛市海港区海港区建设大街与东港路交叉东行1000米瞬慈超市西边',
+				marketAdd: '河北省秦皇岛市海港区建设大街与东港路交叉东行1000米瞬慈超市西边',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '汪全洲',
@@ -2889,7 +2889,7 @@ let data = {
 			},
 			{
 				marketName: '海港区桥东里粮油店',
-				marketAdd: '河北省秦皇岛市海港区海港区河北大街与友谊路交叉口西1000米路南桥东里市场',
+				marketAdd: '河北省秦皇岛市海港区河北大街与友谊路交叉口西1000米路南桥东里市场',
 				marketType: '非转店',
 				marketClass: '粮油店',
 				marketLinkMen: '侯先生',
@@ -2897,7 +2897,7 @@ let data = {
 			},
 			{
 				marketName: '海港区俊聪超市',
-				marketAdd: '河北省秦皇岛市海港区海港区和平大街西段燕大西门北行200米義成花语正门',
+				marketAdd: '河北省秦皇岛市海港区和平大街西段燕大西门北行200米義成花语正门',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '李敏',
@@ -2905,7 +2905,7 @@ let data = {
 			},
 			{
 				marketName: '海港区乾康超市',
-				marketAdd: '河北省秦皇岛市海港区海港区河北大街与文昌路交叉口东北大学对面',
+				marketAdd: '河北省秦皇岛市海港区河北大街与文昌路交叉口东北大学对面',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '孙阳',
@@ -2913,7 +2913,7 @@ let data = {
 			},
 			{
 				marketName: '海港区碧珠超市',
-				marketAdd: '河北省秦皇岛市海港区海港区河北大街与建国路交叉南行500米秦皇小区秦安街市场后门',
+				marketAdd: '河北省秦皇岛市海港区河北大街与建国路交叉南行500米秦皇小区秦安街市场后门',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '金女士',
@@ -2921,7 +2921,7 @@ let data = {
 			},
 			{
 				marketName: '海港区富晒粮油超市',
-				marketAdd: '河北省秦皇岛市海港区海港区北港大街与民族路交叉凃庄市场',
+				marketAdd: '河北省秦皇岛市海港区北港大街与民族路交叉凃庄市场',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '马经理',
@@ -6764,14 +6764,6 @@ let data = {
 				marketLinkTel: '13930345511',
 			},
 			{
-				marketName: '"',
-				marketAdd: '贾女士',
-				marketType: '食杂店',
-				marketClass: '3357186370',
-				marketLinkMen: 'undefined',
-				marketLinkTel: 'undefined',
-			},
-			{
 				marketName: '海港区顺达超市',
 				marketAdd: '河北省秦皇岛市海港区海港区燕山大街东段东李庄东行1000米富家营东北方向徐庄',
 				marketType: '非转店',
@@ -8010,7 +8002,7 @@ let data = {
 			},
 			{
 				marketName: '新世联华牛头崖店',
-				marketAdd: '河北省秦皇岛市抚宁区北戴河区牛头崖镇',
+				marketAdd: '河北省秦皇岛市北戴河区牛头崖镇',
 				marketType: '非转店',
 				marketClass: '食杂店',
 				marketLinkMen: '潘创杰',
@@ -11009,7 +11001,7 @@ let data = {
 			},
 			{
 				marketName: '北戴河区艾欣超市海岳店',
-				marketAdd: '河北省秦皇岛市抚宁区北戴河区联峰路与北四路交叉口（北四路二号）',
+				marketAdd: '河北省秦皇岛市北戴河区联峰路与北四路交叉口（北四路二号）',
 				marketType: '绿标店',
 				marketClass: '小型超市',
 				marketLinkMen: '张女士',
@@ -11057,7 +11049,7 @@ let data = {
 			},
 			{
 				marketName: '北戴河区艾欣超市南戴河店天开店',
-				marketAdd: '河北省秦皇岛市抚宁区北戴河区南戴宁海道与新裕路交叉口西20米（避暑花园小区东侧）',
+				marketAdd: '河北省秦皇岛市北戴河区南戴宁海道与新裕路交叉口西20米（避暑花园小区东侧）',
 				marketType: '绿标店',
 				marketClass: '中型超市',
 				marketLinkMen: '李女士',
@@ -11065,7 +11057,7 @@ let data = {
 			},
 			{
 				marketName: '北戴河区艾欣超市富强店',
-				marketAdd: '河北省秦皇岛市抚宁区北戴河区牛头崖镇迎宾大道20号（富强小区门口）',
+				marketAdd: '河北省秦皇岛市北戴河区牛头崖镇迎宾大道20号（富强小区门口）',
 				marketType: '绿标店',
 				marketClass: '中型超市',
 				marketLinkMen: '宋女士',
@@ -11186,7 +11178,7 @@ let data = {
 			{
 				marketName: '昌黎县鑫发购物广场',
 				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县昌黄连接线小蒲河村路段西侧',
-				marketType: '非福临门售点',
+				marketType: '非售点',
 				marketClass: '食杂店',
 				marketLinkMen: '李世洪',
 				marketLinkTel: '3352083609'
@@ -11194,7 +11186,7 @@ let data = {
 			{
 				marketName: '昌黎县硕硕超市',
 				marketAdd: '河北省秦皇岛市昌黎县秦皇岛市昌黎县茹荷镇大滩村',
-				marketType: '非福临门售点',
+				marketType: '非售点',
 				marketClass: '食杂店',
 				marketLinkMen: '曹妮玛',
 				marketLinkTel: '13780564260'
@@ -12534,10 +12526,11 @@ let data = {
 			{title:'客户被拜访',detail:[['昨日覆盖数','昨日人均拜访','本月覆盖数'],[0,0,0]]}
 		],
 		market:{
-			type:['非转店','红标店','绿标店','形象店','福店'],
+			type:['非转店','红标店','绿标店','形象店','福店','非售点'],
 			grade:['大卖场','大超市','中型超市','小型超市','便利店','粮油店','食杂店','批零档口'],
 			address:['海港区','北戴河','昌黎','抚宁','卢龙','青龙']
-		}
+		},
+		attendence:{}
 	}
 }
 export default data;

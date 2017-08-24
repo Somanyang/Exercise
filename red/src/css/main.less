@@ -278,6 +278,7 @@ footer {
   background: #fff;
   bottom: 0;
   left: 0;
+  z-index: 90;
 }
 footer ul {
   width: 100%;
@@ -312,6 +313,18 @@ footer li i {
 footer .redColor {
   color: #fb6f65;
 }
+.headerRedBg{
+    width: 100%;
+    height: 130/@rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #FB6F65;
+    z-index: 1;
+}
+.headerRedBg+.whiteBg{
+   box-shadow: none;
+}
 #outerWrap {
   height: 100%;
   overflow: hidden;
@@ -319,6 +332,7 @@ footer .redColor {
 #contWrap {
   position: fixed;
   overflow-x:hidden ;
+  visibility: visible;
   width: 100%;
   top: 2.70066666rem;
   left: 0;
@@ -326,6 +340,13 @@ footer .redColor {
 }
 .contWrap {
   background: #fb6f65;
+}
+#contWrap.firstContWrap{
+    height: 1105/@rem;
+    position: absolute;
+    top:0;
+    padding-top: 128/@rem;
+    z-index: 80;
 }
 .firstSec {
   position: relative;
@@ -344,9 +365,10 @@ footer .redColor {
   left: 20%;
   z-index: 20;
 }
+
 .firstSec .bans {
   width: 100%;
-  height: 8.53333333rem;
+  height: 428/@rem;
   position: absolute;
   left: 0;
   transform: translateX(-1rem);
@@ -554,7 +576,7 @@ header.whiteBg h4 span.redBorder {
   padding-left: 0.53333333rem;
 //padding-bottom: 2.13333333rem;
   position: relative;
-  top: 2.13333333rem;
+  top: 150/@rem;
   background: #fff;
 }
 .clients li {
@@ -598,6 +620,156 @@ header.whiteBg h4 span.redBorder {
 .clients li strong {
   background: url(../images/clientsgrey.png) no-repeat left center;
   background-size: 5% ;
+}
+.clientsEdit{
+    height: 150/@rem;
+    box-sizing: border-box;
+    border-bottom: 1/@rem solid #ddd;
+    padding:0;
+    input{
+        height: 50/@rem;
+        width: 702/@rem;
+        margin: 10/@rem;
+    }
+    ul{
+        box-sizing: border-box;
+        border-bottom: 1/@rem solid #ddd;
+        position: relative;
+        z-index: 40;
+    }
+    li{
+        float: left;
+        box-sizing: border-box;
+        height: 78/@rem;
+        width: 250/@rem;
+        text-align: center;
+        line-height: 78/@rem;
+        font-size: 30/@rem;
+        color: #666;
+        position: relative;
+        z-index:40;
+        background: #f8f8f8;
+        div{
+            position: relative;
+            span{
+                display: block;
+                line-height: 78/@rem;
+                border-bottom: 1/@rem solid #ddd;
+                color: #FB6F65;
+                
+            }
+            .unfold{
+                background:#f8f8f8 url(../images/unfold.png) no-repeat  190/@rem  center ;
+                background-size:13% ;
+                position: relative;
+                z-index: 30;
+            }
+            .fold{
+                background:#f8f8f8 url(../images/fold.png) no-repeat  190/@rem  center ;
+                background-size:13% ;
+                position: relative;
+                z-index: 30;
+            }
+            .orderList{
+                width: 300%;
+                position: absolute;
+                bottom: -160/@rem;
+                background: none;
+                background: #fff;
+                z-index:0;
+                b{
+                    display: block;
+                    text-align: left;
+                    padding-left: 75/@rem;
+                    border-bottom: 1/@rem solid #ddd;
+                    font-weight: normal;
+                    color: #333;
+                }
+            }
+        }
+    }
+    .filter{
+        text-indent: 40/@rem;
+        background-image: url(../images/filter.png);
+        background-repeat:no-repeat ;
+        background-position:54/@rem center ;
+        background-size:14% ;
+    }
+    li+li{
+        border-left: 1/@rem solid #ddd;
+    }
+}
+.filterPage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    width: 750/@rem;
+    height: 100%;
+    z-index: 100;
+    .filterDetail{
+        float: right;
+        box-sizing: border-box;
+        width: 614/@rem;
+        height: 100%;
+        background: #fff;
+        padding: 54/@rem 20/@rem 0;
+        li{
+            span{
+                height: 76/@rem;
+                width: 170/@rem;
+                background: #eaeaea;
+                border-radius: 8/@rem;
+                line-height:76/@rem;
+                text-align: center;
+                font-size: 26/@rem;
+                color: #333;
+                margin: 10/@rem;
+                float: left;
+            }
+            .chooseRed{
+                background: #FB5555;
+                color: #fff;
+            }
+        }
+        h4{
+            font-size: 28/@rem;
+            height: 58/@rem;
+            line-height: 58/@rem;
+            color: #6c6c6c;
+            border-bottom: 1/@rem solid #ddd;
+        }
+        
+        div{
+            padding: 30/@rem 0 40/@rem;
+        }
+    }
+    div.btns{
+            overflow: hidden;
+            box-sizing: border-box;
+            width: 100%;
+            position: absolute;
+            bottom: 0/@rem;
+            left: 140/@rem;
+            padding: 0;
+        }
+    .reset,.submit{
+        display: block;
+        float: left;
+        height: 100/@rem;
+        font-size: 34/@rem;
+        line-height: 100/@rem;
+        text-align: center;
+        color: #fff;
+      }
+    .reset{
+        width: 254/@rem;
+        background: #ffaa99;
+    }    
+    .submit{
+        width: 360/@rem;
+        background: #ff5555;
+    }
 }
 .canlender {
   height: 4.56533333rem;
@@ -809,39 +981,43 @@ header.whiteBg h4 span.redBorder {
   width: 3.98933333rem;
   height: 2.432rem;
   float: left;
+  display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 0.64rem 0;
+  color: #333;
 }
-.cubeItem dd {
+.cubeItem span {
+  display: block;
   font-size: 0.55466667rem;
   margin-top: 0.46933333rem;
 }
-.cubeItem dt {
+.cubeItem i{
+  display: block;
   width: 1.23733333rem;
   height: 1.23733333rem;
 }
-dl.cubeItem:nth-of-type(1) dt {
+a.cubeItem:nth-of-type(1) i {
   background: url(../images/items.png) no-repeat center;
 }
-dl.cubeItem:nth-of-type(2) dt {
+a.cubeItem:nth-of-type(2) i {
   background: url(../images/cube.png) no-repeat center;
 }
-dl.cubeItem:nth-of-type(3) dt {
+a.cubeItem:nth-of-type(3) i {
   background: url(../images/inform.png) no-repeat center;
 }
-dl.cubeItem:nth-of-type(4) dt {
+a.cubeItem:nth-of-type(4) i {
   background: url(../images/attendece.png) no-repeat center;
 }
-dl.cubeItem:nth-of-type(5) dt {
+a.cubeItem:nth-of-type(5) i {
   background: url(../images/check.png) no-repeat center;
 }
-dl.cubeItem:nth-of-type(6) dt {
+a.cubeItem:nth-of-type(6) i {
   background: url(../images/diary.png) no-repeat center;
 }
-dl.cubeItem:nth-of-type(7) dt {
+a.cubeItem:nth-of-type(7) i {
   background: url(../images/path.png) no-repeat center;
 }
 .meList {
@@ -892,6 +1068,7 @@ dl.cubeItem:nth-of-type(7) dt {
         border: 1/@rem solid #DDDDDD;
         border-radius: 10/@rem;
         background: #fff;
+
         dl{
             float: left;
             height: 100%;
@@ -958,6 +1135,7 @@ dl.cubeItem:nth-of-type(7) dt {
             .chartDetail{
                 height: 330/@rem;
                 width: 710/@rem;
+                transition: 0.8s;
             }
         }
     }
@@ -991,8 +1169,12 @@ dl.cubeItem:nth-of-type(7) dt {
             color: #999;
         }
     }
+    li.last{
+        border-bottom: none;
+        height: 50/@rem;   
+    }
 }
-.in,.out{
+.in,.out,.checkover{
     position: absolute;
     bottom: 40/@rem;
     display: block;
@@ -1010,4 +1192,7 @@ dl.cubeItem:nth-of-type(7) dt {
 }
 .in{
     background: darkseagreen;
+}
+.checkover{
+    background: #aaa;
 }

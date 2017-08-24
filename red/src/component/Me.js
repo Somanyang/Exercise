@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Header from './header';
 import Footer from './footer';
+import {Link} from 'react-router-dom';
 //import '../css/Me.css'
 let img=require('../images/photo.png')
 class Me extends Component{
@@ -44,9 +45,11 @@ class Me extends Component{
 		rate=Math.round(m/n*100)+'%';
 		let cubeItem=null;
 		let arr=['项目','产品','公告','考勤','审批','日志','拜访路线'];
+		let arr1=['/items','/product','/inform','attendence','/check','diary','visitPath']
 		cubeItem=arr.map((e,i)=>{
 			let dataC={
 				txt:e,
+				href:arr1[i],
 				key:i
 			}
 			return<CubeItem {...dataC}/>
@@ -89,10 +92,10 @@ class Me extends Component{
 class CubeItem extends Component{
 	render(){
 		return(
-			<dl className="cubeItem">
-				<dt></dt>
-				<dd>{this.props.txt}</dd>
-			</dl>
+			<Link className="cubeItem" to={this.props.href}>
+				<i></i>
+				<span>{this.props.txt}</span>
+			</Link>
 		)
 	}
 }
