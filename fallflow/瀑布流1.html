@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				display: flex;
+				justify-content:center;
+			}
+			ul{
+				position: relative;
+				list-style: none;
+				padding: 0;
+			}
+			li{
+				position: absolute;
+				list-style: none;
+				width: 236px;
+			}
+			li{
+				margin:0 0 10px 10px;
+				transition: 1s;
+				box-shadow: 1px 1px 5px 0 #333333;
+			}
+			img{
+				width: 236px;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul></ul>
+		<script src="jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			var arrT=[];
+			var arrL=[];
+			var widthOne=236;
+			var marginOne=10;
+			var num=0;
+			var widthTotal=$(window).innerWidth();
+			var len=Math.floor((widthTotal+10)/(widthOne+marginOne));
+			$('ul').width(len*(widthOne+marginOne));
+			for(var i=0;i<len;i++){
+				arrL.push(i*(widthOne+marginOne));
+				arrT.push(0);
+			}
+			var onOff=true;
+			$(window).resize(function(){
+				var widthTotal=$(window).innerWidth();
+				var len=Math.floor((widthTotal+10)/(widthOne+marginOne));
+				$('ul').width(len*(widthOne+marginOne))
+				arrT.length=arrL.length=0;
+				for(var i=0;i<len;i++){
+					arrL.push(i*(widthOne+marginOne));
+					arrT.push(0);
+				}
+				$('li').each(function(i,e){
+					$(e).css({
+						top:arrT[minIndex(arrT)],
+						left:arrL[minIndex(arrT)]
+					});
+					arrT[minIndex(arrT)] +=$(e).height()+10;
+				});
+			})
+			
+			
+			$(window).scroll(function(){
+				if(arrT[minIndex(arrT)]<=($(window).scrollTop()+$(window).innerHeight())){
+					if(onOff){
+						num++;
+						show()
+					}
+				}
+			})
+			
+			
+			show()
+			function show(){ 
+				onOff=false;
+				$.ajax({
+					url:"http://www.wookmark.com/api/json/popular?callback=?",
+					data:{
+						page:num
+					},
+					dataType:'jsonp',
+					async:true,
+					success:function(data){
+						$.each(data, function(i,e) {
+							var li=$('<li>');
+							var img=$(`<img src=${e.preview} />`);
+							li.append(img);
+							img[0].onload=function(){
+								li.css({
+									top:arrT[minIndex(arrT)],
+									left:arrL[minIndex(arrT)],
+								});
+								arrT[minIndex(arrT)] +=e.height/(e.width/widthOne)+10;
+								$('ul').append(li);
+								$('ul').height(Math.max.apply(null,arrT))
+							}
+							
+						});
+						onOff=true;
+					}
+				});
+			}
+			
+			function minIndex(arr){
+				var min = Math.min.apply(null,arr);
+				return arr.findIndex(e=>e==min);
+			}
+		</script>
+	</body>
+</html>
