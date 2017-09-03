@@ -1,0 +1,24 @@
+{
+  "name": "red",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animated": "^0.2.0",
+    "echarts": "^3.6.2",
+    "jquery": "^3.2.1",
+    "react": "^15.6.1",
+    "react-bmap": "^1.0.34",
+    "react-dom": "^15.6.1",
+    "react-motion": "^0.5.1",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.11",
+    "react-transition-group": "^2.2.0",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
