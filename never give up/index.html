@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Never give up!3</title>
+		<link rel="shortcut icon" href="images/ico.ico" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		
+<!--每个小页面分别在不同的div中，没有显示的页面已经在行间display:none，可自行开启,部分内容为显示效果已经添加类名，在使用时可删去-->
+		
+<!---------------------首页  --------------------------------------------------------->
+		<!--类名：selected  表示选择项-->
+<div id="background">
+		<div class="box index"  >
+			<div class="header">
+				<!--logo-->
+				<span class="toRight"></span>
+				<!--数字3-->
+				<span class="toLeft"></span>
+		        <!-- 数字3下面的飞溅 -->
+		        <span class="spatter"></span>
+			</div>
+			<div class="below">
+				<!--模式选择-->
+				<div class="btns">
+					<span class="btn">
+						<i class="normalMode">闯关模式</i>
+					</span>
+					<span class="btn">
+						<i class="challengeMode">街机模式</i>
+					</span>
+                    <!--背景图片预加载-->
+                    <!--<div class="selected" style="display: none"></div>-->
+				</div>
+				<!--人物选择 -->
+				<div class="character">
+					<!--白，红，绿，蓝，在父级div添加selected类名，可以控制选中的背景显示-->
+					<div class="white">
+						<!--em 是底座       span 是人物-->
+						<em></em>
+						<span class="whiteC"></span>
+					</div>
+					<div class="red">
+						<em></em>
+						<span class="redC"></span>
+					</div>
+					<div class="green">
+						<em></em>
+						<span class="greenC"></span>
+					</div>
+					<div class="blue">
+						<em></em>
+						<span class="blueC"></span>
+					</div>
+				</div>
+			</div>
+			<span class="new">
+					<i>新手教程</i>
+			</span>
+		</div>
+		
+<!-------------dead页面--------------------------------------------------------------------------->
+		<div class="box dead" >
+			<div class="bg"></div>
+			<div class="dot"></div>
+			<!--人物-->
+			<!--movedown是任务下滑的动画类名-->
+			<div class="monster">
+				<!--怪物眼睛-->
+				<em></em>
+				<em></em>
+			</div>
+			<!--进度-->
+			<div class="progress">33%</div>
+			<!--重来或者下个按钮-->
+			<div class="btns">
+				<span class="replay">
+					<i></i>
+				</span>
+				<span class="next">
+					<i></i>
+				</span>
+			</div>
+			<!--菜单按钮-->
+			<div class="menu">
+				<span></span>
+			</div>
+			<audio src="music/shakeeyes.wav" preload="auto"></audio>
+
+            <!--背景图片预加载-->
+            <!--<div class="moveDown " style="display: none"></div>-->
+		</div>
+		
+<!--------------------过关页面---------------------------------------------------------------->
+		<div class="box victory" >
+			<!--发光环绕背景-->
+			<div class="bg1"></div>
+			<div class="bg2"></div>	
+			<!--右部分-->
+			<div class="right">
+				<!--  墨水机  -->
+			    <div class="trigger">
+			        <div class="glass">
+			            <div class="ink"><i></i></div>
+			        </div>
+			        <div class="water"></div>
+			    </div>
+				<div class="character"></div>
+				<!--底桩-->
+				<div class="plate"></div>
+				<div class="stars"></div>
+			</div>
+			<div class="progress">100%</div>
+			<!--重来和下一个按钮-->
+			<div class="btns">
+				<span class="replay">
+					<i></i>
+				</span>
+				<span class="next">
+					<i></i>
+				</span>
+                <!--背景图片预加载-->
+                <!--<div class="selected" style="display: none">-->
+                    <!--<i></i>-->
+                <!--</div>-->
+
+			</div>
+			<!--菜单按钮-->
+			<div class="menu">
+				<span></span>
+			</div>
+		</div>
+		
+		
+<!---------------------选关页面------------------------------------------------------------------------>
+		<div class="box level" >
+			<h2>牛刀小试</h2>
+			<!--选关-->
+			<div class="chooseLevel">
+				<!--类名levelOpen控制背景，并且添加数字表示关卡解锁-->
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<!--主菜单-->
+			<div class="menu">
+				<span></span>
+			</div>
+		</div>
+		
+<!---------------------关卡页面------------------------------------------------------------------------>
+		<div class="box main" >
+			<!--  开场文字说明 -->
+		    <div class="explain">
+		        <!--  模式 -->
+		        <p class="pattern"></p>
+		        <!--  关卡 -->
+		        <p class="point"></p>
+		    </div>
+			<!--  正常模式百分比、数字显示  -->
+		    <div class="percentage"></div>
+		    <!--  新手提示  -->
+		    <div class="space">
+		        <span>!</span>
+		        <p>空格准备</p>
+		    </div>
+		    <!--  小黑球  -->
+		    <div id="boss">
+		        <div class="div"></div>
+		    </div>
+		    <!--  墨水机  -->
+		    <div class="trigger">
+		        <div class="glass">
+		            <div class="lnk"></div>
+		        </div>
+		        <div class="water"></div>
+		    </div>
+		    <!--  关卡主体  -->
+		    <ul id="content"></ul>
+		    <!--主菜单-->
+			<div class="mainMenu">
+				<span></span>
+			</div>
+
+            <!--背景图片预加载-->
+            <!--<div class="hover" style="display: none"></div>-->
+
+		</div>
+<!--------------------补间动画------------------------------------------------------------------------>		
+		<div class="transiton" style="display: none">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+</div>
+<!---------------------背景音乐-------------------------------------------------------------------------->
+		<audio src="music/bgm.wav" id="bgm" preload="auto" loop ></audio>
+		<audio src="music/nbgm.wav" id="nbgm" preload="auto"></audio>
+		<audio src="music/jbgm.wav" id="jbgm" preload="auto"></audio>
+		<audio src="music/sbgm.wav" id="sbgm" preload="auto"></audio>
+		<audio src="music/gbgm.wav" id="gbgm" preload="auto"></audio>
+		<audio src="music/cbgm.wav" id="cbgm" preload="auto"></audio>
+		<audio src="music/normal.wav" id="normal" preload="auto" loop="loop"></audio>
+		<audio src="music/gulu.wav" id="gulu" preload="auto" loop="loop"></audio>
+<!---------------------js文件--------------------------------------------------------------------------->
+        <script src="js/canvas.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Mtween.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
