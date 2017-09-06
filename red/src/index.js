@@ -1,24 +1,24 @@
 import React ,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router,Route,Link,Redirect,Switch} from 'react-router-dom';
-
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import Data from './js/data';
 import './js/inHead.js';
-import './css/main.css';
-import './css/style.css'
-import First from './component/First.js';
-import Communicate from './component/Communicate';
-import Clients from './component/Clients';
-import Sche from './component/Sche';
-import Me from './component/Me';
-import Charts from './component/Charts';
-import NewPro from './component/NewPro';
-import Message from './component/Message';
-import Products from './component/Products';
-import Informs from './component/Informs';
-import Myproject from './component/MyProject';
-import Attendence from './component/Attendence';
-import BuildProject from './component/BuildProject';
+import './styles/main.css';
+import './styles/style.css';
+import First from './component/first/First.js';
+import Communicate from './component/communicate/Communicate';
+import Clients from './component/clients/Clients';
+import Sche from './component/sche/Sche';
+import Me from './component/me/Me';
+import Charts from './component/charts/Charts';
+import NewPro from './component/newpro/NewPro';
+import Message from './component/message/Message';
+import Products from './component/products/Products';
+import Informs from './component/informs/Informs';
+import Myproject from './component/myproject/MyProject';
+//import Attendence from './component/attendence/Attendence';
+import BuildProject from './component/buildproject/BuildProject';
 let img=require('./images/photo.png');
 
 class Login extends Component{
@@ -252,71 +252,77 @@ class LoginError extends Component{
 ReactDOM.render(
 	<Router>
 		<div style={{height:'100%',overflow:'hidden'}}>
+			
 			<Switch>
 				<Route exact strict path="/"  render={()=>(<Redirect to="/login"/>)}/>
-				<Route exact strict path="/:id"  render={(obj)=>{
+				<Route exact strict path="/:id" 
+				render={({location,match})=>{
+					let dataC={
+						location:location,
+						key:location.pathname
+					}
 					let pathInfo=[
 					{	
 						name:'register',
-						component:<Register />
+						component:<Register {...dataC}/>
 					},
 					{
 						name:'login',
-						component:<Login />
+						component:<Login {...dataC}/>
 					},
 					{
 						name:'index',
-						component:<First />
+						component:<First {...dataC}/>
 					},
 					{
 						name:'communicate',
-						component:<Communicate />
+						component:<Communicate {...dataC}/>
 					},
 					{
 						name:'clients',
-						component:<Clients />
+						component:<Clients {...dataC}/>
 					},
 					{
 						name:'sche',
-						component:<Sche />
+						component:<Sche {...dataC}/>
 					},
 					{
 						name:'me',
-						component:<Me />
+						component:<Me {...dataC}/>
 					},
 					{
 						name:'charts',
-						component:<Charts />
+						component:<Charts {...dataC}/>
 					},
-					{
-						name:'attendence',
-						component:<Attendence />
-					},
+//					{
+//						name:'attendence',
+//						component:<Attendence {...dataC}/>
+//					},
 					{
 						name:'new',
-						component:<NewPro />
+						component:<NewPro {...dataC}/>
 					},
 					{
 						name:'message',
-						component:<Message />
+						component:<Message {...dataC}/>
 					},
 					{
 						name:'product',
-						component:<Products />
+						component:<Products {...dataC}/>
 					},
 					{
 						name:'inform',
-						component:<Informs />
+						component:<Informs {...dataC}/>
 					},
 					{
 						name:'projects',
-						component:<Myproject />
+						component:<Myproject {...dataC}/>
 					},{
 						name:'build',
-						component:<BuildProject />
+						component:<BuildProject {...dataC}/>
 					},
 					];
-					let {match}=obj
+//					let {match}=obj
 					let f=pathInfo.find((e)=>{
 						let obj=null;
 						if(e.name===match.params.id){
@@ -326,11 +332,21 @@ ReactDOM.render(
 					})
 					if(!f){
 						return <Login />
+							
 					}else{
-						return f.component;
+						return (
+							<CSSTransitionGroup
+					            transitionName="fade"
+					            transitionEnterTimeout={500}
+					            transitionLeaveTimeout={300}
+					          >
+								{f.component}
+							</CSSTransitionGroup>
+						)
 					}
 				}}/>
 			</Switch>
+			
 		</div>
 	</Router>
 	, document.getElementById('root'));

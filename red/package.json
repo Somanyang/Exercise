@@ -7,12 +7,12 @@
     "echarts": "^3.6.2",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
     "react-bmap": "^1.0.34",
     "react-dom": "^15.6.1",
     "react-motion": "^0.5.1",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11",
-    "react-transition-group": "^2.2.0",
     "redux": "^3.7.2"
   },
   "scripts": {
