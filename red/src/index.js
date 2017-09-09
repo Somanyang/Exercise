@@ -125,7 +125,7 @@ class Login extends Component{
 					{submita}
 				</div>
 				<Route path="/register" component={Register}/>
-			<Link to="/register" className="to-register" >没有账号，注册一个</Link>
+			<Link to="/register" className="to-register" >申请加入公司</Link>
 			{LR}
 		</div>
 		)
@@ -338,7 +338,7 @@ ReactDOM.render(
 							<CSSTransitionGroup
 					            transitionName="fade"
 					            transitionEnterTimeout={500}
-					            transitionLeaveTimeout={300}
+					            transitionLeaveTimeout={500}
 					          >
 								{f.component}
 							</CSSTransitionGroup>
